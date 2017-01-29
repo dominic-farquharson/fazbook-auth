@@ -44,3 +44,13 @@ function createUser(req, res) {
     res.redirect('/');
   });
 }
+/*
+Helper method, login required if user requests a page
+when they aren't logged in.
+
+*/
+function loginRequired(req, res, next) {
+  if (!req.user) return res.status(401).json({ status: 'Please log in' });
+
+  return next();
+}
