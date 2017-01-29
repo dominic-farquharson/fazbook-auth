@@ -19,3 +19,51 @@ footer {
 a {
   color: #00B7FF;
 }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+
+}
+.home{
+  background:url('http://media.giphy.com/media/lJNoBCvQYp7nq/giphy.gif');
+  background-size:contain;
+}
+main>h1 {
+  font-weight:bold;
+}
+
+.labels>div>label {
+  font-size:2em;
+}
+.labels>div>input {
+  font-size:2em;
+}
+
+.container>p {
+  justify-content: center;
+  position:relative;
+  display:inline-block;
+  left:20%;
+  margin-top:20%;
+}
+
+.user>p {
+  display:block;
+  margin:10px;
+  font-size:1.2em;
+}
+
+.user>a {
+  left:45%;
+  margin-top:20px;
+}
+
+span {
+  font-weight:bold;
+}

@@ -3,8 +3,8 @@
     <% include ../partials/header.ejs %>
     <main>
       <div class="container">
-        <form action="/auth/register" method="post">
-          <div>
+        <form class="labels" action="/auth/register" method="post">
+          <div style="margin-top:10px;">
             <label>Username:</label>
             <input type="text" name="username"/>
           </div>
@@ -29,7 +29,7 @@
             <input type="date" name="dob"/>
           </div>
           <div>
-            <input type="submit" value="Register"/>
+            <input style="left:45%; margin-bottom:10px;" class="waves-effect waves-light btn-large teal" type="submit" value="Register"/>
           </div>
         </form>
       </div>

@@ -2,13 +2,16 @@
   <body>
     <% include ../partials/header.ejs %>
     <main>
-      <div class="container">
-        <p>Hello, this is the user profile page!</p>
-        <p><%= user.firstName %></p>
-        <p><%= user.lastName %></p>
-        <p><%= user.email %></p>
-        <p><%= user.dob %></p>
-        <a href="/auth/logout">LOG OUT</a>
+      <div class=" user container">
+        <h2 class='center'>Hello, this is the user profile page
+          <br />
+          for <%= user.firstName %>
+        </h2>
+        <p><span>FirstName:</span> <%= user.firstName %></p>
+        <p><span>LastName:</span> <%= user.lastName %></p>
+        <p><span>Email:</span> <%= user.email %></p>
+        <p><span>Dob:</span> <%= user.dob %></p>
+        <a class="waves-effect waves-light btn-large blue" href="/auth/logout">LOG OUT</a>
       </div>
     </main>
     <% include ../partials/footer.ejs %>
