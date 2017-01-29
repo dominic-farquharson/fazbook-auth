@@ -54,3 +54,13 @@ function loginRequired(req, res, next) {
 
   return next();
 }
+/*
+Exporting modules for use in other files
+
+*/
+module.exports = {
+  comparePass,
+  loginRedirect,
+  loginRequired,
+  createUser
+}
